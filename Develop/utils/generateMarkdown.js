@@ -80,19 +80,20 @@ function renderTests(tests, toc) {
   return `## Tests\n\n${tests}\n\n`;
 }
 
+//render the Questions Section if renders based off of the inputs for github username and email, if neither were provided the section is ommitted.  Otherwise the content is rendered
+// based off of the data provided.
 function renderQuestionsSection(github, email){
   if(!github && !email) return ``;
 
   let temp = `## Questions\n\n`
   temp += `if you have any questions feel free to use the links below.\n\n`;
 
-  
   if(github) temp += `[GitHub](https://github.com/${github})\n\n`;
   if(email) temp +=  `[${email}](mailto:${email})\n\n`;
   return temp
 }
 
-
+//This function dynamically creates the table of contents for the README.md file.  It adds the links for sections if a section contains any information.
 function renderTableofContents(data){
   let temp = `## Table of Contents\n\n`;
   if(data.installation) temp += `- [Installation](#installation)\n`;
@@ -107,6 +108,8 @@ function renderTableofContents(data){
   return temp;
 }
 
+//Generates the README.md contents,  section by section.  If there was no data for a particular section the section is ommitted.
+ 
 function generateMarkdown(data, names, badges, licenses) {
   const index = names.indexOf(data.license);
   let temp = renderTitle(data.title);
