@@ -19,7 +19,7 @@ My motivation for this project is to learn how to develop a project using node.j
 
 ## Credits
 
-To get the list of licenses for the badges and the URL's for each license I did a google search and came across the following search https://gist.githubusercontent.com/lukas-h/2a5d00690736b4c3a7ba.  I clicked on the the raw version for this site, I copied and papasted the information concerning the dfferent licenses into a text file.  I then wrote an apple script file to parse out the data from the text file and conrverted that infromation into a json strstriring  and saved the file.
+To get the list of licenses for the badges and the URL's for each license I did a google search and came across the following search https://gist.githubusercontent.com/lukas-h/2a5d00690736b4c3a7ba.  I clicked on the the raw version for this site, I copied and pasted the information concerning the different licenses into a text file.  I then wrote an apple script file to parse out the data from the text file and conrverted that information into a json string and saved the file.
 
 ## License
 
